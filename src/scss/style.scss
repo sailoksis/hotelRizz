@@ -1,0 +1,10 @@
+@import "fonts";
+
+body {
+   font-family: Montserrat, Quicksand;
+   font-size: 50px;
+   background: url("@img/cover.png") 0 0 no-repeat;
+   span {
+    color: red;
+   }
+}
