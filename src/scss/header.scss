@@ -1,0 +1,102 @@
+.header {
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    &__wrapper {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 50;
+    }
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+    &__body {
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+      min-height: 70px;
+    }
+    &__main {
+      display: flex;
+      align-items: center;
+      flex: 0 0 390.5/1160 * 100%;
+    }
+    &__logo {
+      padding-right: 11.5px;
+    }
+    &__logotext {
+      color: rgb(182, 137, 137);
+    }
+    &__menu {
+      flex: 0 0 440.5/1160 * 100%;
+    }
+    //display none скрыл саблист для удобствва, разделить линки, разделить стрелки, сделать выпадающий список
+  }
+  
+    .menu {
+      
+      &__body {
+        overflow: auto;
+        flex: 0 0 390.5/1160 * 100%;
+        
+      }
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+      }
+      &__link {
+        font-weight: 400;
+        color: inherit;
+        transition: color 0.3s ease 0s;
+        position: relative;
+      }
+      &__link_aboutus {
+        font-weight: bold;
+        color: rgba(31, 32, 65, 0.75);
+      }
+     
+      &__arrow {
+        margin: 0px 0px 0px 8px;
+        transition: all 0.3s ease 0s;
+        font-size: 24px;
+        
+      }
+      &__sub-list {
+        position: relative;
+        background-color: rgb(241, 161, 0);
+        padding: 15px;
+        flex: 1 1 100%;
+        display: none;
+      }
+      &__sub-item {
+        color: red;
+        display: flex;
+      }
+      &__sub-link {
+        color: #fff;
+        line-height: 120%;
+      }
+    }
+  
+    
+    .actions-header {
+      &__buttonsignin {
+        color: red;
+      }
+      &__buttonsignup {
+        color: red;
+      }
+    }

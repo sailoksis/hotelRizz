@@ -1,3 +1,97 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-family: "Montserrat";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "Montserrat";
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
 @font-face {
   font-family: Montserrat;
   font-display: swap;
@@ -26,11 +120,213 @@
   font-weight: 700;
   font-style: normal;
 }
-body {
-  font-family: Montserrat, Quicksand;
-  font-size: 50px;
-  background: url("../img/cover.png") 0 0 no-repeat;
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
-body span {
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-family: "Montserrat";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "Montserrat";
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  color: #000;
+  font-size: 14px;
+}
+body._lock {
+  overflow: hidden;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+._container {
+  max-width: 1160pxpx;
+  padding: 0px 140px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.header__wrapper {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__body {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  min-height: 70px;
+}
+.header__main {
+  display: flex;
+  align-items: center;
+  flex: 0 0 33.6637931034%;
+}
+.header__logo {
+  padding-right: 11.5px;
+}
+.header__logotext {
+  color: rgb(182, 137, 137);
+}
+.header__menu {
+  flex: 0 0 37.974137931%;
+}
+
+.menu__body {
+  overflow: auto;
+  flex: 0 0 33.6637931034%;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.menu__link {
+  font-weight: 400;
+  color: inherit;
+  transition: color 0.3s ease 0s;
+  position: relative;
+}
+.menu__link_aboutus {
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
+}
+.menu__arrow {
+  margin: 0px 0px 0px 8px;
+  transition: all 0.3s ease 0s;
+  font-size: 24px;
+}
+.menu__sub-list {
+  position: relative;
+  background-color: rgb(241, 161, 0);
+  padding: 15px;
+  flex: 1 1 100%;
+  display: none;
+}
+.menu__sub-item {
   color: red;
+  display: flex;
+}
+.menu__sub-link {
+  color: #fff;
+  line-height: 120%;
+}
+
+.actions-header__buttonsignin {
+  color: red;
+}
+.actions-header__buttonsignup {
+  color: red;
+}
+
+.page {
+  flex: 1 1 auto;
 }
