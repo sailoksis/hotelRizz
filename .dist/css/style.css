@@ -266,11 +266,8 @@ body._lock {
 .header__logo {
   padding-right: 11.5px;
 }
-.header__logotext {
-  color: rgb(182, 137, 137);
-}
 .header__menu {
-  flex: 0 0 37.974137931%;
+  padding-right: 1px;
 }
 
 .menu__body {
@@ -279,15 +276,12 @@ body._lock {
 }
 .menu__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  box-sizing: border-box;
 }
 .menu__item {
   display: flex;
+  margin-right: 20px;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative;
 }
 .menu__link {
   font-weight: 400;
@@ -300,13 +294,13 @@ body._lock {
   color: rgba(31, 32, 65, 0.75);
 }
 .menu__arrow {
-  margin: 0px 0px 0px 8px;
+  margin: 3px 0px 0px 2.5px;
   transition: all 0.3s ease 0s;
   font-size: 24px;
 }
 .menu__sub-list {
   position: relative;
-  background-color: rgb(241, 161, 0);
+  background-color: rgb(148, 201, 214);
   padding: 15px;
   flex: 1 1 100%;
   display: none;
@@ -325,6 +319,39 @@ body._lock {
 }
 .actions-header__buttonsignup {
   color: red;
+}
+
+.svg-TOXIN-dims {
+  width: 54px;
+  height: 14px;
+}
+
+._icon-arrow-down:before {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  left: 4px;
+  top: 2px;
+  content: "\e900";
+}
+
+._icon-arrow-down {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 21px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+._icon-arrow-down::after,
+._icon-arrow-down::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-bottom: 2px solid;
 }
 
 .page {
