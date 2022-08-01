@@ -266,9 +266,6 @@ body._lock {
 .header__logo {
   padding-right: 11.5px;
 }
-.header__menu {
-  padding-right: 1px;
-}
 
 .menu__body {
   overflow: auto;
@@ -314,16 +311,15 @@ body._lock {
   line-height: 120%;
 }
 
+.actions-header {
+  padding-left: 18px;
+}
+
 .actions-header__buttonsignin {
-  color: red;
+  color: rgb(199, 2, 2);
 }
 .actions-header__buttonsignup {
   color: red;
-}
-
-.svg-TOXIN-dims {
-  width: 54px;
-  height: 14px;
 }
 
 ._icon-arrow-down:before {

@@ -29,10 +29,6 @@
     &__logo {
       padding-right: 11.5px;
     }
-    &__menu {
-      
-      padding-right: 1px;
-    }
     //display none скрыл саблист для удобствва, разделить линки, разделить стрелки, сделать выпадающий список
   }
   
@@ -44,15 +40,18 @@
   
       }
       &__list {
+        
         display: flex;
         box-sizing: border-box;
       }
       &__item {
+        
         display: flex;
         margin-right: 20px;
         align-items: center;
       }
       &__link {
+        
         font-weight: 400;
         color: inherit;
         transition: color 0.3s ease 0s;
@@ -87,17 +86,25 @@
       }
     }
  
-    
     .actions-header {
+      padding-left: 18px;
+      
+    }
+    .actions-header {
+     
       &__buttonsignin {
-        color: red;
+
+
+        color: rgb(199, 2, 2);
+        
       }
       &__buttonsignup {
+        
         color: red;
+      
       }
-    }
-    .svg-TOXIN-dims { width: 54px; height: 14px; }
-   
+      }
+      
 
 
     
