@@ -255,7 +255,7 @@ body._lock {
 .header__body {
   display: flex;
   align-items: center;
-  padding: 5px 0;
+  padding: 0px 0;
   min-height: 70px;
 }
 .header__main {
@@ -311,15 +311,27 @@ body._lock {
   line-height: 120%;
 }
 
-.actions-header {
-  padding-left: 18px;
-}
-
 .actions-header__buttonsignin {
-  color: rgb(199, 2, 2);
+  width: 87px;
+  height: 34px;
+  left: 997px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  border: 2px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: rgb(252, 249, 249);
 }
 .actions-header__buttonsignup {
   color: red;
+}
+.actions-header__textin {
+  color: #BC9CFF;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.actions-header__textup {
+  color: rgb(111, 207, 151);
 }
 
 ._icon-arrow-down:before {
