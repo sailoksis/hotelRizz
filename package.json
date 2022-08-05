@@ -26,7 +26,7 @@
     "gulp-newer": "latest",
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
-    "gulp-rename":"latest",
+    "gulp-rename": "latest",
     "gulp-replace": "latest",
     "gulp-sass": "latest",
     "gulp-svg-sprite": "latest",
@@ -43,5 +43,8 @@
     "webp-converter": "2.2.3",
     "webpack": "latest",
     "webpack-stream": "latest"
+  },
+  "dependencies": {
+    "build": "^0.1.4"
   }
 }
