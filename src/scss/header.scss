@@ -38,7 +38,8 @@
       &__body {
         overflow: auto;
         flex: 0 0 390.5/1160 * 100%;
-  
+        color: rgba(31, 32, 65, 0.5);
+        
       }
       &__list {
         
@@ -127,12 +128,13 @@
     
     //Иконки стрелочек 
     ._icon-arrow-down:before {
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
+      
       border-right: 2px solid;
       transform: rotate(45deg);
-      left: 4px;
-      top: 2px;
+      left: 6px;
+      top: 4px;
       content: "\e900";
       
   }
@@ -143,7 +145,6 @@
       display: block;
       width: 24px;
       height: 21px;
-      
       color: rgba(31, 32, 65, 0.5);
       
       
@@ -155,6 +156,7 @@
       box-sizing: border-box;
       position: absolute;
       border-bottom: 2px solid;
+      
   }
   
   
