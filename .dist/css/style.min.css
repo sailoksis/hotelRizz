@@ -227,6 +227,11 @@ body._lock {
   margin: 0 auto;
 }
 
+:root {
+  --gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  --border-w: 3px;
+}
+
 .header {
   background: #ffffff;
   position: absolute;
@@ -311,21 +316,40 @@ body._lock {
 }
 
 .actions-header__buttonsignin {
-  padding: 8px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 22px;
-  border: 2px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  background: rgb(252, 249, 249);
+  position: relative;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: inherit;
+  color: inherit;
+  background: none;
 }
-.actions-header__buttonsignup {
-  color: red;
+.actions-header__buttonsignin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  border: var(--border-w) solid transparent;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  transition: all 0.25s ease-out;
 }
 .actions-header__textin {
   color: #BC9CFF;
-  padding: 10px;
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
+}
+.actions-header__buttonsignup {
+  color: red;
 }
 .actions-header__textup {
   color: rgb(111, 207, 151);
