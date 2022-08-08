@@ -1,7 +1,7 @@
 //переменные---------------------
 :root {
   --gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  --border-w: 3px;
+  --border-w: 2px;
 }
 
 //переменные-------------------
@@ -102,17 +102,17 @@
     }//Скорее всего удалить
     
     .actions-header {
-     
+      display: flex;
+      justify-content: space-between;
       &__buttonsignin {
         position: relative;
-        padding: 15px 20px;
-        margin-top: 20px;
+        padding: 9.5px 20.5px;
         border: 0;
-        border-radius: 50px;
-        font-size: 20px;
+        border-radius: 22px;
         font-family: inherit;
         color: inherit;
         background: none;
+        
       }
       &__buttonsignin::before {
         content: "";
@@ -128,7 +128,7 @@
         mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
         -webkit-mask-composite: destination-out;
         mask-composite: exclude;
-        transition: all .25s ease-out;
+        
       }
       &__textin{
         color: #BC9CFF;
@@ -138,11 +138,23 @@
       }
     
       &__buttonsignup {
-        color:red;
+        background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 22px;
+        box-sizing: border-box;
+        padding: 8px 20px;
+
+  
       }
       
       &__textup {
-        color: $ColorGreen;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        
       }
       }
       
