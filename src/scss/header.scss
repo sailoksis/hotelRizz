@@ -1,6 +1,5 @@
 //переменные---------------------
 :root {
-  --gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   --border-w: 2px;
 }
 
@@ -26,7 +25,7 @@
     &__body {
       display: flex;
       align-items: center;
-      padding: 0px 0;
+      padding: 5px 0;
       min-height: 70px;
     }
     &__main {
@@ -41,7 +40,7 @@
   }
   
     .menu {
-      
+      flex: 0 0 420px;
       &__body {
         overflow: auto;
         flex: 0 0 390.5/1160 * 100%;
@@ -49,19 +48,21 @@
         
       }
       &__list {
-        
         display: flex;
         box-sizing: border-box;
+        justify-content: space-evenly;
       }
       &__item {
         
         display: flex;
-        margin-right: 19.6px;
         align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0px 3px;
+        padding: 5px 0px; //Отсутп безопасности, если пункты начнут складываться друг под друга и будет больше элементов
+        position: relative;
       }
       &__link {
-        
-
         color: inherit;
         transition: color 0.3s ease 0s;
         position: relative;
@@ -84,11 +85,22 @@
         background-color: rgb(148, 201, 214);
         padding: 15px;
         flex: 1 1 100%;
-        display: none;
+        @media (min-width:$md3+px) {
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s ease 0s;
+          transform: translate(0px, 10px);
+          min-width: 200px;
+          left: 0;
+          position: absolute;
+          top: 100%;
+        }
       }
       &__sub-item {
-        color: red;
-        display: flex;
+        &:not(:last-child) {
+          margin: 0px 0px 5px 0px;
+        }
+
       }
       &__sub-link {
         color: #fff;
