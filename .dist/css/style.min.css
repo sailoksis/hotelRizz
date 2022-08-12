@@ -263,16 +263,13 @@ body._lock {
 .header__logo {
   padding-right: 11.5px;
 }
-
-.menu {
-  flex: 0 0 420px;
-  width: 100%;
+.header__menu {
+  display: flex;
+  flex: 0 0 37.9310344828%;
 }
+
 .menu__body {
-  overflow: auto;
-  flex: 0 0 33.6637931034%;
   color: rgba(31, 32, 65, 0.5);
-  overflow: hidden;
 }
 .menu__list {
   display: flex;
