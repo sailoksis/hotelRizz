@@ -1,4 +1,3 @@
-@import "null";
 
 //<МИКСИНЫ>=================================================================
 @import "mixins";
@@ -18,7 +17,7 @@ $fontfamily: "Montserrat";
 //<ПЕРЕМЕННЫЕ>=================================================================
 $minwidth: 320px;
 $maxWidth: 1440px;
-$maxWidthContainer: 1160px;
+$maxWidthContainer: 1160;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
@@ -48,8 +47,9 @@ body {
   min-height: 100%;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+ 
   &._loaded {
+    size: 14px;//над убрать и чот сделать
   }
 }
 
@@ -58,7 +58,7 @@ body {
 //<ОСНОВНАЯ СЕТКА>=================================================================
 ._container {
   max-width: $maxWidthContainer + px;
-  padding: 0px 140px;
+  padding: 0px 0px;
   margin: 0 auto;
 }
 //</ОСНОВНАЯ СЕТКА>=================================================================
