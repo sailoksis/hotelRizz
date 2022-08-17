@@ -178,22 +178,23 @@ body._lock {
 
 .menu {
   flex: 0 0 37.9310344828%;
+  justify-content: space-evenly;
 }
 .menu__body {
   color: rgba(31, 32, 65, 0.5);
+  width: 100%;
 }
 @media (min-width: 767.98px) {
   .menu__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .menu__item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0px 3px;
   padding: 5px 0px;
   position: relative;
 }
@@ -256,12 +257,13 @@ body._lock {
 }
 
 .header__actions {
-  flex: 0 0 38.1896551724%;
+  flex: 0 0 28.4482758621%;
 }
 
 .actions-header {
   display: flex;
   justify-content: space-between;
+  padding-left: 27px;
 }
 .actions-header__buttonsignin {
   position: relative;
@@ -314,7 +316,7 @@ body._lock {
   height: 8px;
   border-right: 2px solid;
   transform: rotate(45deg);
-  left: 6px;
+  left: 7px;
   top: 4px;
   content: "\e900";
 }
