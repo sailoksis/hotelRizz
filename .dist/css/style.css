@@ -178,10 +178,8 @@ body._lock {
 
 .menu {
   flex: 0 0 37.9310344828%;
-  justify-content: space-evenly;
 }
 .menu__body {
-  color: rgba(31, 32, 65, 0.5);
   width: 100%;
 }
 @media (min-width: 767.98px) {
@@ -192,6 +190,7 @@ body._lock {
   }
 }
 .menu__item {
+  color: rgba(31, 32, 65, 0.5);
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -210,7 +209,7 @@ body._lock {
   }
   .menu__item:hover .menu__arrow,
 .menu__item:hover .menu__link {
-    color: #BC9CFF;
+    color: #d4bffd;
   }
 }
 .menu__link {
@@ -229,9 +228,17 @@ body._lock {
   transition: all 0.3s ease 0s;
   font-size: 24px;
 }
+@media (max-width: 767.98px) {
+  .menu__arrow {
+    font-size: 14px;
+  }
+  .menu__arrow._active {
+    transform: rotate(-180deg);
+  }
+}
 .menu__sub-list {
   position: relative;
-  background-color: rgb(148, 201, 214);
+  background-color: rgb(204, 238, 247);
   padding: 15px;
   flex: 1 1 100%;
 }
@@ -246,6 +253,11 @@ body._lock {
     pointer-events: none;
     position: absolute;
     top: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .menu__sub-list {
+    margin: 10px -15px 0px -15px;
   }
 }
 .menu__sub-item:not(:last-child) {
@@ -273,6 +285,8 @@ body._lock {
   font-family: inherit;
   color: inherit;
   background: none;
+  font-size: 12px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 .actions-header__buttonsignin::before {
   content: "";
@@ -292,7 +306,6 @@ body._lock {
 .actions-header__textin {
   color: #BC9CFF;
   font-weight: 700;
-  font-size: 12px;
   text-transform: uppercase;
 }
 .actions-header__buttonsignup {
@@ -306,9 +319,9 @@ body._lock {
   font-weight: 700;
   line-height: 15px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
 }
 
 ._icon-arrow-down:before {
@@ -316,8 +329,6 @@ body._lock {
   height: 8px;
   border-right: 2px solid;
   transform: rotate(45deg);
-  left: 7px;
-  top: 4px;
   content: "\e900";
 }
 
@@ -325,9 +336,9 @@ body._lock {
   box-sizing: border-box;
   position: relative;
   display: block;
-  width: 24px;
-  height: 21px;
   color: rgba(31, 32, 65, 0.5);
+  align-items: center;
+  margin: 0px 7px 13px 8.77px;
 }
 
 ._icon-arrow-down::after,

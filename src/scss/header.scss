@@ -45,21 +45,20 @@
   
     .menu {
       flex: 0 0 440/1160 * 100%;
-      justify-content: space-evenly;
 
       &__body {
-        color: rgba(31, 32, 65, 0.5);
         width: 100%;
+        
       }
       &__list {
         @media (min-width: $md3+px) {
-        display: flex;
-        flex-wrap: wrap;
+          display: flex;
+          flex-wrap: wrap;
         justify-content: space-between;
-        
         }
       }
       &__item {
+        color: rgba(31, 32, 65, 0.5);
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -67,7 +66,7 @@
         position: relative;
         @media (any-hover: hover) {
           &:hover{
-            .menu__sub-list{
+            .menu__sub-list {
               transform: translate(0px, 0px);
               opacity: 1;
               visibility: visible;
@@ -78,7 +77,9 @@
             }
             .menu__arrow, 
             .menu__link {
-              color: #BC9CFF;
+              color: #d4bffd;
+             
+             
             }
           }
         }
@@ -94,19 +95,23 @@
         font-weight: bold;
         color: rgba(31, 32, 65, 0.75);
         white-space: nowrap;
-        
       }
       
       &__arrow {
         margin: 3px 0px 0px 2.5px;
         transition: all 0.3s ease 0s;
         font-size: 24px;
-        
+        @media (max-width: $md3+px) {
+          font-size: 14px;
+          &._active {
+            transform: rotate(-180deg);
+          }
+        }
       } 
 
       &__sub-list {
         position: relative;
-        background-color: rgb(148, 201, 214);
+        background-color: rgb(204, 238, 247);
         padding: 15px;
         flex: 1 1 100%;
         @media (min-width: $md3+px) {
@@ -119,6 +124,9 @@
           pointer-events: none;
           position: absolute;
           top: 100%;
+        }
+        @media (max-width: $md3+px) {
+          margin: 10px -15px 0px -15px;
         }
       }
       &__sub-item {
@@ -151,7 +159,8 @@
         font-family: inherit;
         color: inherit;
         background: none;
-        
+        font-size: 12px;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
       }
       &__buttonsignin::before {
         content: "";
@@ -167,12 +176,13 @@
         mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
         -webkit-mask-composite: destination-out;
         mask-composite: exclude;
-        
+       
       }
       &__textin{
         color: #BC9CFF;
         font-weight: 700;
-        font-size: 12px;
+        
+        
         text-transform: uppercase;
       }
     
@@ -186,13 +196,14 @@
       }
       
       &__textup {
+        
         font-size: 12px;
         font-weight: 700;
         line-height: 15px;
         letter-spacing: 0em;
-        text-align: left;
+        text-align: center;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: rgba(255, 255, 255, 1);
         
       }
       }
@@ -204,11 +215,8 @@
     ._icon-arrow-down:before {
       width: 8px;
       height: 8px;
-      
       border-right: 2px solid;
       transform: rotate(45deg);
-      left: 7px;
-      top: 4px;
       content: "\e900";
       
   }
@@ -217,11 +225,9 @@
       box-sizing: border-box;
       position: relative;
       display: block;
-      width: 24px;
-      height: 21px;
       color: rgba(31, 32, 65, 0.5);
-      
-      
+      align-items: center;
+      margin: 0px 7px 13px 8.77px;
   }
   ._icon-arrow-down::after,
   ._icon-arrow-down::before {
@@ -230,6 +236,7 @@
       box-sizing: border-box;
       position: absolute;
       border-bottom: 2px solid;
+      
       
   }
   
