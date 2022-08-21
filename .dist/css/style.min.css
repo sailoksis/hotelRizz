@@ -206,6 +206,7 @@ body._lock {
   }
   .menu__item:hover .menu__arrow {
     transform: rotate(-180deg);
+    margin: 10px 0px 0px 16px;
   }
   .menu__item:hover .menu__arrow,
 .menu__item:hover .menu__link {
@@ -226,12 +227,8 @@ body._lock {
 .menu__arrow {
   margin: 3px 0px 0px 2.5px;
   transition: all 0.3s ease 0s;
-  font-size: 24px;
 }
 @media (max-width: 767.98px) {
-  .menu__arrow {
-    font-size: 14px;
-  }
   .menu__arrow._active {
     transform: rotate(-180deg);
   }
@@ -248,7 +245,7 @@ body._lock {
     transition: all 0.3s ease 0s;
     transform: translate(0px, 10px);
     visibility: hidden;
-    min-width: 200px;
+    min-width: 110px;
     left: 0;
     pointer-events: none;
     position: absolute;
@@ -261,7 +258,7 @@ body._lock {
   }
 }
 .menu__sub-item:not(:last-child) {
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 10px 0px;
 }
 .menu__sub-link {
   color: #fff;

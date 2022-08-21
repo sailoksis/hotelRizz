@@ -38,7 +38,7 @@
     }
     &__menu{
       display: flex;
-     
+    
     }
     //display none скрыл саблист для удобствва, разделить линки, разделить стрелки, сделать выпадающий список
   }
@@ -74,6 +74,7 @@
             }
             .menu__arrow {
               transform: rotate(-180deg);
+              margin: 10px 0px 0px 16px;
             }
             .menu__arrow, 
             .menu__link {
@@ -100,9 +101,7 @@
       &__arrow {
         margin: 3px 0px 0px 2.5px;
         transition: all 0.3s ease 0s;
-        font-size: 24px;
         @media (max-width: $md3+px) {
-          font-size: 14px;
           &._active {
             transform: rotate(-180deg);
           }
@@ -119,7 +118,7 @@
           transition: all 0.3s ease 0s;
           transform: translate(0px, 10px);
           visibility: hidden;
-          min-width: 200px;
+          min-width: 110px;
           left: 0;
           pointer-events: none;
           position: absolute;
@@ -131,7 +130,7 @@
       }
       &__sub-item {
         &:not(:last-child) {
-          margin: 0px 0px 5px 0px;
+          margin: 0px 0px 10px 0px;
         }
 
       }
@@ -196,7 +195,6 @@
       }
       
       &__textup {
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 15px;
@@ -204,7 +202,6 @@
         text-align: center;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 1);
-        
       }
       }
       
