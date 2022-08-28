@@ -79,12 +79,27 @@
             .menu__arrow, 
             .menu__link {
               color: #d4bffd;
-             
-             
             }
           }
         }
-        
+        @media (min-width: $md3 + px) {
+          &:hover{
+            .menu__sub-list {
+              transform: translate(0px, 0px);
+              opacity: 1;
+              visibility: visible;
+              pointer-events: auto;
+            }
+            .menu__arrow {
+              transform: rotate(-180deg);
+              margin: 10px 0px 0px 16px;
+            }
+            .menu__arrow, 
+            .menu__link {
+              color: #d4bffd;
+            }
+          }
+        }
       }
       &__link {
         font-weight: 400;
@@ -117,7 +132,6 @@
           opacity: 0;             
           transition: all 0.3s ease 0s;
           transform: translate(0px, 10px);
-          visibility: hidden;
           min-width: 110px;
           left: 0;
           pointer-events: none;

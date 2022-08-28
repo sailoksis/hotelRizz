@@ -213,6 +213,22 @@ body._lock {
     color: #d4bffd;
   }
 }
+@media (min-width: 767.98px) {
+  .menu__item:hover .menu__sub-list {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .menu__item:hover .menu__arrow {
+    transform: rotate(-180deg);
+    margin: 10px 0px 0px 16px;
+  }
+  .menu__item:hover .menu__arrow,
+.menu__item:hover .menu__link {
+    color: #d4bffd;
+  }
+}
 .menu__link {
   font-weight: 400;
   color: inherit;
@@ -244,7 +260,6 @@ body._lock {
     opacity: 0;
     transition: all 0.3s ease 0s;
     transform: translate(0px, 10px);
-    visibility: hidden;
     min-width: 110px;
     left: 0;
     pointer-events: none;
