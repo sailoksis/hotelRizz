@@ -174,10 +174,11 @@ body._lock {
 }
 .header__menu {
   display: flex;
+  margin-right: 27px;
 }
 
 .menu {
-  flex: 0 0 37.9310344828%;
+  flex: 0 0 37.8879310345%;
 }
 .menu__body {
   width: 100%;
@@ -281,13 +282,12 @@ body._lock {
 }
 
 .header__actions {
-  flex: 0 0 28.4482758621%;
+  flex: 0 0 26.1206896552%;
 }
 
 .actions-header {
   display: flex;
   justify-content: space-between;
-  padding-left: 27px;
 }
 .actions-header__buttonsignin {
   position: relative;
@@ -350,7 +350,7 @@ body._lock {
   display: block;
   color: rgba(31, 32, 65, 0.5);
   align-items: center;
-  margin: 0px 7px 13px 8.77px;
+  margin: 0px 9px 13px 8.77px;
 }
 
 ._icon-arrow-down::after,
