@@ -288,6 +288,12 @@ body._lock {
 .actions-header {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 1160px) {
+  .actions-header {
+    gap: calc(15px + 5 * ((100vw - 320px) / 840));
+  }
 }
 .actions-header__buttonsignin {
   position: relative;
