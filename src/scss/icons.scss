@@ -1,0 +1,30 @@
+    //Иконки стрелочек 
+    ._icon-arrow-down:before {
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid;
+        transform: rotate(45deg);
+      
+        
+        
+    }
+    
+    ._icon-arrow-down {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        color: rgba(31, 32, 65, 0.5);
+        align-items: center;
+        margin: 0px 9px 13px 8.77px;
+        content: "\e900";
+    }
+    ._icon-arrow-down::after,
+    ._icon-arrow-down::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        border-bottom: 2px solid;
+    }
+    
+    

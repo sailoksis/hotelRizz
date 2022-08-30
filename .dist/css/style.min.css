@@ -1,3 +1,29 @@
+._icon-arrow-down:before {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+}
+
+._icon-arrow-down {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  color: rgba(31, 32, 65, 0.5);
+  align-items: center;
+  margin: 0px 9px 13px 8.77px;
+  content: "\e900";
+}
+
+._icon-arrow-down::after,
+._icon-arrow-down::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-bottom: 2px solid;
+}
+
 @font-face {
   font-family: Montserrat;
   font-display: swap;
@@ -226,7 +252,6 @@ body._lock {
   }
   .menu__item:hover .menu__arrow {
     transform: rotate(-180deg);
-    margin: 10px 0px 0px 16px;
   }
   .menu__item:hover .menu__arrow,
 .menu__item:hover .menu__link {
@@ -242,7 +267,7 @@ body._lock {
   }
   .menu__item:hover .menu__arrow {
     transform: rotate(-180deg);
-    margin: 10px 0px 0px 16px;
+    margin: 10px 0px 0px 18px;
   }
   .menu__item:hover .menu__arrow,
 .menu__item:hover .menu__link {
@@ -266,10 +291,12 @@ body._lock {
   white-space: nowrap;
 }
 .menu__arrow {
-  margin: 3px 0px 0px 2.5px;
   transition: all 0.3s ease 0s;
 }
 @media (max-width: 767.98px) {
+  .menu__arrow {
+    margin: 0px 0px 10px 7px;
+  }
   .menu__arrow._active {
     transform: rotate(-180deg);
   }
@@ -366,32 +393,6 @@ body._lock {
   text-align: center;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-}
-
-._icon-arrow-down:before {
-  width: 8px;
-  height: 8px;
-  border-right: 2px solid;
-  transform: rotate(45deg);
-  content: "\e900";
-}
-
-._icon-arrow-down {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  color: rgba(31, 32, 65, 0.5);
-  align-items: center;
-  margin: 0px 9px 13px 8.77px;
-}
-
-._icon-arrow-down::after,
-._icon-arrow-down::before {
-  content: "";
-  display: block;
-  box-sizing: border-box;
-  position: absolute;
-  border-bottom: 2px solid;
 }
 
 .footer {

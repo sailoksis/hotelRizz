@@ -95,7 +95,6 @@
             }
             .menu__arrow {
               transform: rotate(-180deg);
-              margin: 10px 0px 0px 16px;
             }
             .menu__arrow, 
             .menu__link {
@@ -113,7 +112,7 @@
             }
             .menu__arrow {
               transform: rotate(-180deg);
-              margin: 10px 0px 0px 16px;
+              margin: 10px 0px 0px 18px;
             }
             .menu__arrow, 
             .menu__link {
@@ -138,9 +137,9 @@
       }
       
       &__arrow {
-        margin: 3px 0px 0px 2.5px;
+        
         transition: all 0.3s ease 0s;
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3+px) {margin: 0px 0px 10px 7px;
           &._active {
             transform: rotate(-180deg);
           }
@@ -199,9 +198,9 @@
         background: none;
         font-size: 12px;
         box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        
       }
       &__buttonsignin::before {
-        
         content: "";
         position: absolute;
         top: 0;
@@ -246,32 +245,3 @@
 
 
     
-    //Иконки стрелочек 
-    ._icon-arrow-down:before {
-      width: 8px;
-      height: 8px;
-      border-right: 2px solid;
-      transform: rotate(45deg);
-      content: "\e900";
-      
-      
-  }
-  
-  ._icon-arrow-down {
-      box-sizing: border-box;
-      position: relative;
-      display: block;
-      color: rgba(31, 32, 65, 0.5);
-      align-items: center;
-      margin: 0px 9px 13px 8.77px;
-  }
-  ._icon-arrow-down::after,
-  ._icon-arrow-down::before {
-      content: "";
-      display: block;
-      box-sizing: border-box;
-      position: absolute;
-      border-bottom: 2px solid;
-  }
-  
-  
