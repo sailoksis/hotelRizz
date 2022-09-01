@@ -229,10 +229,10 @@ if (spollersArray.length > 0) {
 	}
 }
 
-//RemoveClasses
-export function _removeClasses(el, class_name) {
+//RemoveClasses доделать выпадающее меню 
+/*export function _removeClasses(el, class_name) {
 	for (var i = 0; i < el.length; i++) {
 		el[i].classList.remove(class_name);
 	}
-}
+} */
 //========================================

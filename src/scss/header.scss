@@ -46,14 +46,13 @@
     &__menu{
       display: flex;
       margin-right: 27px;
-    
+      width: 100%;
     }
-    //display none скрыл саблист для удобствва, разделить линки, разделить стрелки, сделать выпадающий список
+    &__actions {
+      flex: 0 0 303/1160 * 100%;
+    }
   }
-  
     .menu {
-      flex: 0 0 439.5/1160 * 100%;
-
       &__body {
         width: 100%;
         @media (max-width: $md3+px) {
@@ -66,7 +65,12 @@
           background-color: #ffffff;
           transition: left 0.3s ease 0s;
           padding: 70px 15px 30px 15px;
-
+          &::before{
+            content: '';
+            position: fixed;
+            width: 100%;
+            height: 0;
+          }
 
         }
       }
@@ -75,6 +79,7 @@
           display: flex;
           flex-wrap: wrap;
         justify-content: space-between;
+        
         }
       }
       &__item {
@@ -107,7 +112,6 @@
             .menu__sub-list {
               transform: translate(0px, 0px);
               opacity: 1;
-              visibility: visible;
               pointer-events: auto;
             }
             .menu__arrow {
@@ -139,7 +143,7 @@
       &__arrow {
         
         transition: all 0.3s ease 0s;
-        @media (max-width: $md3+px) {margin: 0px 0px 10px 7px;
+        @media (max-width: $md3+px) {
           &._active {
             transform: rotate(-180deg);
           }
@@ -153,7 +157,7 @@
         padding: 15px;
         flex: 1 1 100%;
         @media (min-width: $md3+px) {
-          opacity: 0;             
+          opacity: 0;
           transition: all 0.3s ease 0s;
           transform: translate(0px, 10px);
           min-width: 110px;
@@ -164,6 +168,8 @@
         }
         @media (max-width: $md3+px) {
           margin: 10px -15px 0px -15px;
+          display: none; 
+          
         }
       }
       &__sub-item {
@@ -175,13 +181,14 @@
       &__sub-link {
         color: #fff;
         line-height: 120%;
+        @media (any-hover: hover) {
+          &:hover{
+            text-decoration: underline;
+          }
+        }
         
       }
     }
-    .header__actions {
-      flex: 0 0 303/1160 * 100%;
-      
-    }//Скорее всего удалить
     
     .actions-header {
     
