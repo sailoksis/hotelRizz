@@ -458,7 +458,25 @@ body._lock {
 }
 
 .footer {
-  padding: 200px;
+  padding-top: 500px;
+}
+
+.footer__main {
+  margin-bottom: 16px;
+}
+.footer__buttombody {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__copyright {
+  margin-left: 0px;
+}
+.footer__mediaIcons {
+  justify-content: right;
+}
+.footer__icons {
+  padding-left: 18.8px;
 }
 
 .page {

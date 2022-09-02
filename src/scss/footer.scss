@@ -1,3 +1,28 @@
 .footer {
-    padding: 200px;
+    padding-top: 500px;
+
+}
+.footer{
+&__main{
+    margin-bottom: 16px;
+}
+&__buttombody{
+position: relative;
+    display: flex;
+    justify-content: space-between;
+   
+}
+&__copyright {
+    margin-left: 0px;
+    
+}
+&__mediaIcons {
+    
+    justify-content: right;
+}
+&__icons{
+    padding-left: 18.8px;
+    
+}
+
 }
