@@ -472,6 +472,11 @@ body._lock {
 .footer__copyright {
   margin-left: 0px;
 }
+.footer__line {
+  width: 1400px;
+  border-bottom: 1px solid #cccccc;
+  display: block;
+}
 .footer__mediaIcons {
   justify-content: right;
 }
