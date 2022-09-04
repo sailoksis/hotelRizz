@@ -24,6 +24,55 @@
   border-bottom: 2px solid;
 }
 
+._icone-insidebutton-right {
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+}
+
+._icone-insidebutton-right {
+  position: relative;
+  top: 20px;
+  width: 14px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  left: 0;
+  display: block;
+}
+
+._icone-insidebutton-right::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 2px;
+  top: 3.3px;
+  right: -2.5px;
+  background-color: #000000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-45deg);
+}
+
+._icone-insidebutton-right::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 2px;
+  top: -3.3px;
+  right: -2.5px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Montserrat;
   font-display: swap;
@@ -45,6 +94,19 @@
   font-weight: 400;
   font-style: normal;
 }
+._footer-title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+@media (max-width: 1160px) {
+  ._footer-title {
+    font-size: calc(10px + 2 * ((100vw - 320px) / 840));
+  }
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -160,6 +222,19 @@ body._lock {
   max-width: 1160px;
   padding: 0px 0px;
   margin: 0 auto;
+}
+
+._footer-title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+@media (max-width: 1160px) {
+  ._footer-title {
+    font-size: calc(10px + 2 * ((100vw - 320px) / 840));
+  }
 }
 
 :root {
@@ -457,31 +532,8 @@ body._lock {
   }
 }
 
-.footer {
-  padding-top: 500px;
-}
-
-.footer__main {
-  margin-bottom: 16px;
-}
-.footer__buttombody {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-.footer__copyright {
-  margin-left: 0px;
-}
-.footer__line {
-  width: 1400px;
-  border-bottom: 1px solid #cccccc;
-  display: block;
-}
-.footer__mediaIcons {
-  justify-content: right;
-}
-.footer__icons {
-  padding-left: 18.8px;
+._icone-insidebutton-right {
+  margin-left: 122px;
 }
 
 .page {

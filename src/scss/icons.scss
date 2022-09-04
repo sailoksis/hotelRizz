@@ -1,30 +1,85 @@
-    //Иконки стрелочек 
-    ._icon-arrow-down:before {
-        width: 8px;
-        height: 8px;
-        border-right: 2px solid;
-        transform: rotate(45deg);
-      
-        
-        
-    }
+//Иконки стрелочек
+._icon-arrow-down:before {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+}
+
+._icon-arrow-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    color: rgba(31, 32, 65, 0.5);
+    align-items: center;
+    margin: 0px 9px 13px 8.77px;
+    content: "\e900"; //удалить или подключить позже
+}
+._icon-arrow-down::after,
+._icon-arrow-down::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-bottom: 2px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+._icone-insidebutton-right {
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+}
+
+._icone-insidebutton-right {
+    position: relative;
+    top: 20px;
+    width: 14px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+    left: 0;
+    display: block;
     
-    ._icon-arrow-down {
-        box-sizing: border-box;
-        position: relative;
-        display: block;
-        color: rgba(31, 32, 65, 0.5);
-        align-items: center;
-        margin: 0px 9px 13px 8.77px;
-        content: "\e900";
-    }
-    ._icon-arrow-down::after,
-    ._icon-arrow-down::before {
-        content: "";
-        display: block;
-        box-sizing: border-box;
-        position: absolute;
-        border-bottom: 2px solid;
-    }
-    
-    
+}
+
+._icone-insidebutton-right::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 2px;
+    top: 3.3px;
+    right: -2.5px;
+    background-color: #000000;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+    transform: rotate(-45deg);
+}
+
+._icone-insidebutton-right::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 2px;
+    top: -3.3px;
+    right: -2.5px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
