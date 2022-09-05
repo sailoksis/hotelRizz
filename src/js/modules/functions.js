@@ -229,6 +229,8 @@ if (spollersArray.length > 0) {
 	}
 }
 
+
+
 //RemoveClasses доделать выпадающее меню 
 /*export function _removeClasses(el, class_name) {
 	for (var i = 0; i < el.length; i++) {

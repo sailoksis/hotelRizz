@@ -33,25 +33,18 @@
 
 
 
-
 ._icone-insidebutton-right {
-    cursor: pointer;
-    position: relative;
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-}
-
-._icone-insidebutton-right {
-    position: relative;
-    top: 20px;
+cursor: pointer;
+  position: absolute;
+  top: 15px;
+  text-align: center;
+  cursor: pointer;
     width: 14px;
     height: 2px;
     background-color: #000000;
     box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
     left: 0;
     display: block;
-    
 }
 
 ._icone-insidebutton-right::before {

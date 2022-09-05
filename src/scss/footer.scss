@@ -1,4 +1,38 @@
-
-._icone-insidebutton-right {
-    margin-left: 122px;
+.footer{
+    padding: 300px 0px 0px 0px;
 }
+.subscribe__form {
+    position: relative;
+    padding: 0px;
+    height: 10px;
+    width: 140px;
+  }
+  .subscribe__input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000;
+    outline: none;
+    margin: 0 0 0 0px;
+    box-sizing: border-box;
+    padding: 14px 0px 14px 0px;
+  }
+  .clear {
+    position: absolute;
+    float: right;
+    top: 0px;
+    right: 0px;
+    background: #ccc;
+    text-align: center;
+    cursor: pointer;
+  }
+  .clear:after {
+    content: "X";
+    position: absolute;
+    color: #373737;
+    font-size: 20px;
+    top: 12px;
+    right: 20px;
+  }
+  input:invalid + .clear {
+    visibility: hidden;
+  }
