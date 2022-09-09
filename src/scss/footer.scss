@@ -13,9 +13,7 @@
      @include adaptiv-value("column-gap", 40, 0, 1);
     }
     &__main {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+     
     }
     &__logo {
     
@@ -23,14 +21,17 @@
     &__reward {
     
     }
-    &__menu {}
-    &__subscribe {}
-    &__line {
-      display:flex;
-      border-top: 1px solid #ccc;
+    &__menu {
+      
     }
+    &__subscribe {
+      
+    }
+  
     &__buttombody {
       display:flex;
+      align-items: center;
+      justify-content: space-between;
     }
     &__copyright {}
     &__mediaicons {}
@@ -77,4 +78,9 @@
   }
   input:invalid + .clear {
     visibility: hidden;
+  }
+  hr {
+
+    display: flex;
+    border-top: 1px solid #ccc;
   }
