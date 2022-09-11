@@ -7,19 +7,25 @@
     &__mainblock{
     
       display: grid;
-     grid-template-columns: 250px 1fr 260px;
-     @include adaptiv-value("padding-top", 100, 30, 1);
-     @include adaptiv-value("padding-buttom", 100, 30, 1);  
+     grid-template-columns: 300px 1fr 260px;
+     @include adaptiv-value("padding-top", 100, 120, 1);
+     @include adaptiv-value("padding-bottom", 98, 23, 1);  // тут нижний отступ нужно будет потыкать на маленьких экранах по середине
      @include adaptiv-value("column-gap", 40, 0, 1);
     }
     &__main {
-     
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
     }
-    &__logo {
-    
+    &__logotip {
+    margin: 0px 0px 22px 0px ;
     }
     &__reward {
-    
+      color: rgba(31, 32, 65, 0.75);
+      line-height: 150%;
+      &:not(:last-child) {
+        margin: 0px 0px 1em 0px;
+      }
     }
     &__menu {
       
@@ -34,8 +40,12 @@
       justify-content: space-between;
     }
     &__copyright {}
-    &__mediaicons {}
-    &__icons {}
+    &__mediaicons {
+
+    }
+    &__icons:not(:last-child) {
+      padding-right: 21px;
+    }
     }
     
     
