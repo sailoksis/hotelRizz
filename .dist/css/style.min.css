@@ -529,7 +529,7 @@ body._lock {
 
 .footer__mainblock {
   display: grid;
-  grid-template-columns: 300px 1fr 260px;
+  grid-template-columns: 260px 1fr 260px;
   padding-top: 100px;
   padding-bottom: 98px;
   column-gap: 40px;
@@ -564,6 +564,11 @@ body._lock {
 .footer__reward:not(:last-child) {
   margin: 0px 0px 1em 0px;
 }
+.footer__menu {
+  display: flex;
+  align-self: start;
+  justify-content: center;
+}
 .footer__buttombody {
   display: flex;
   align-items: center;
@@ -573,6 +578,10 @@ body._lock {
   padding-right: 21px;
 }
 
+.menu-footer {
+  display: flex;
+  justify-content: space-between;
+}
 .subscribe__form {
   position: relative;
   padding: 0px;
