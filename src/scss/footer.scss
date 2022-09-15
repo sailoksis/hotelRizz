@@ -57,12 +57,25 @@
         justify-content: space-between;
       &__column {}
       &__title {
-        
+        margin: 0px 0px 28px 0px;
       }
       &__list {
+        li {
+          &:not(:last-child) {
+            margin: 0px 0px 28px 0px;
+          }
+        }
         }
       &__link {
-        
+        color: rgba(31, 32, 65, 0.5);
+        transition: color 0.3s ease 0s;
+        line-height: 120%;
+        font-weight: 400;
+        @media(any-hover: hover) {
+          &:hover {
+            color:#BC9CFF;
+          }
+        } 
       }
       }
       
@@ -112,3 +125,7 @@
     display: flex;
     border-top: 1px solid #ccc;
   }
+
+  
+  
+    
