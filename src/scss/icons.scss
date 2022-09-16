@@ -32,7 +32,7 @@
 
 
 
-
+//arrow_EmailButtom
 ._icone-insidebutton-right {
 cursor: pointer;
   position: absolute;
@@ -41,7 +41,7 @@ cursor: pointer;
   cursor: pointer;
     width: 14px;
     height: 2px;
-    background-color: #000000;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
     left: 0;
     display: block;
@@ -54,7 +54,7 @@ cursor: pointer;
     height: 2px;
     top: 3.3px;
     right: -2.5px;
-    background-color: #000000;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
     transform: rotate(-45deg);
 }
@@ -66,7 +66,7 @@ cursor: pointer;
     height: 2px;
     top: -3.3px;
     right: -2.5px;
-    background-color: #000000;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     transform: rotate(45deg);
 }
 

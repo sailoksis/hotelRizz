@@ -8,14 +8,25 @@
     
       display: grid;
      grid-template-columns: 260px 1fr 260px;
-     @include adaptiv-value("padding-top", 100, 120, 1);
+     @include adaptiv-value("padding-top", 400, 120, 1);
      @include adaptiv-value("padding-bottom", 98, 23, 1);  // тут нижний отступ нужно будет потыкать на маленьких экранах по середине
      @include adaptiv-value("column-gap", 40, 0, 1);
+      
+     @media(max-width: $md1 + px){
+      grid-template-columns: 1fr 290px;
+     }
+     @media (max-width:$md2+px) {
+      display: block;
+     }
     }
     &__main {
      display: flex;
      flex-direction: column;
      align-items: flex-start;
+     @media (max-width:$md1 + px) {
+      grid-column: span 2;
+      @include adaptiv-value("margin-bottom", 40, 30, 1);
+     }
     }
     &__logotip {
     margin: 0px 0px 22px 0px ;
@@ -31,7 +42,9 @@
       display: flex;
       align-self: start;
       justify-content: center;
-
+      @media (max-width:$md2+px) {
+        @include adaptiv-value("margin-bottom", 40, 30, 1);
+       }
     }
     &__subscribe {
       
@@ -78,7 +91,32 @@
         } 
       }
       }
-      
+      .subscribe {
+        &__title{
+          margin: 0px 0px 28px 0px;
+        }
+        &__text{
+          color: rgba(31, 32, 65, 0.5);
+        transition: color 0.3s ease 0s;
+        line-height: 171%;
+        @media(any-hover: hover) {
+          &:hover {
+            color:#BC9CFF;
+          }
+        } 
+                }
+       
+     &__form{
+      margin: 30px 0px 0px 0px;
+    }
+    &__button{
+      margin: 6px 0px 0px 230px;
+    }
+    &__input{
+      width: 100%;
+      padding: 0px 12px;
+    }
+      }
       
 
 
@@ -87,43 +125,24 @@
 
 .subscribe__form {
     position: relative;
-    padding: 0px;
-    height: 10px;
-    width: 140px;
+    height: 44px;
+    width: 260px; 
   }
   .subscribe__input{
     height: 100%;
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid rgba(31, 32, 65, 0.25);
     outline: none;
     margin: 0 0 0 0px;
     box-sizing: border-box;
-    padding: 14px 0px 14px 0px;
+    padding: 14px 0px 14px 15px;
+    
   }
-  .clear {
-    position: absolute;
-    float: right;
-    top: 0px;
-    right: 0px;
-    background: #ccc;
-    text-align: center;
-    cursor: pointer;
-  }
-  .clear:after {
-    content: "X";
-    position: absolute;
-    color: #373737;
-    font-size: 20px;
-    top: 12px;
-    right: 20px;
-  }
-  input:invalid + .clear {
-    visibility: hidden;
-  }
+  
   hr {
-
     display: flex;
     border-top: 1px solid #ccc;
+    margin: 0px 0px 25px 0px;
   }
 
   
