@@ -7,7 +7,7 @@
     &__mainblock{
     
       display: grid;
-     grid-template-columns: 260px 1fr 270px;
+     grid-template-columns: 260px 1fr 270px ;
      @include adaptiv-value("padding-top", 400, 120, 1);
      @include adaptiv-value("padding-bottom", 78, 23, 1);  // тут нижний отступ нужно будет потыкать на маленьких экранах по середине
      @include adaptiv-value("column-gap", 40, 0, 1);
