@@ -558,6 +558,7 @@ body._lock {
 @media (max-width: 991.98px) {
   .footer__mainblock {
     display: block;
+    margin: 0px 0px 0px 0px;
   }
 }
 .footer__main {
@@ -579,12 +580,23 @@ body._lock {
 .footer__logotip {
   margin: 0px 0px 20px 0px;
 }
+@media (max-width: 991.98px) {
+  .footer__logotip {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .footer__reward {
   color: rgba(31, 32, 65, 0.75);
   line-height: 171%;
 }
 .footer__reward:not(:last-child) {
   margin: 0px 0px 1em 0px;
+}
+@media (max-width: 991.98px) {
+  .footer__reward {
+    display: none;
+  }
 }
 .footer__menu {
   padding-top: 5px;
@@ -605,13 +617,18 @@ body._lock {
 .footer__subscribe {
   padding-top: 5px;
 }
+@media (max-width: 991.98px) {
+  .footer__subscribe {
+    display: none;
+  }
+}
 .footer__buttombody {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .footer__icons:not(:last-child) {
-  padding-right: 21px;
+  padding-right: 18px;
 }
 
 .menu-footer {
@@ -620,6 +637,11 @@ body._lock {
 }
 .menu-footer__title {
   margin: 0px 0px 23px 0px;
+}
+@media (max-width: 991.98px) {
+  .menu-footer__title {
+    display: none;
+  }
 }
 .menu-footer__list li:not(:last-child) {
   margin: 0px 0px 24px 0px;
@@ -680,6 +702,11 @@ hr {
   display: flex;
   border-top: 1px solid #ccc;
   margin: 0px 0px 25px 0px;
+}
+@media (max-width: 991.98px) {
+  hr {
+    display: none;
+  }
 }
 
 .page {

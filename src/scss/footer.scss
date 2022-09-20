@@ -16,6 +16,7 @@
      }
      @media (max-width:$md2+px) {
       display: block;
+      margin: 0px 0px 0px 0px;
      }
     }
     &__main {
@@ -29,12 +30,19 @@
     }
     &__logotip {
     margin: 0px 0px 20px 0px ;
+    @media (max-width:$md2 + px) {
+      margin-left: auto;
+      margin-right: auto
+    }
     }
     &__reward {
       color: rgba(31, 32, 65, 0.75);
       line-height: 171%;
       &:not(:last-child) {
         margin: 0px 0px 1em 0px;
+      }
+      @media (max-width:$md2 + px) {
+        display: none;
       }
     }
     &__menu {
@@ -45,22 +53,27 @@
       @media (max-width:$md2+px) {
         @include adaptiv-value("margin-bottom", 40, 30, 1);
        }
+       
     }
     &__subscribe {
-      padding-top: 5px;
+      padding-top: 5px; 
+      @media (max-width:$md2 + px) {
+        display: none;
+      }
     }
   
     &__buttombody {
       display:flex;
       align-items: center;
       justify-content: space-between;
+      
     }
     &__copyright {}
     &__mediaicons {
 
     }
     &__icons:not(:last-child) {
-      padding-right: 21px;
+      padding-right: 18px;
     }
     }
     
@@ -68,9 +81,13 @@
       .menu-footer {
         display: flex;
         justify-content: space-between;
+        
       &__column {}
       &__title {
         margin: 0px 0px 23px 0px;
+        @media (max-width:$md2 + px) {
+          display: none;
+        }
       }
       &__list {
         li {
@@ -143,6 +160,9 @@
     display: flex;
     border-top: 1px solid #ccc;
     margin: 0px 0px 25px 0px;
+    @media (max-width:$md2 + px) {
+      display: none;
+    }
   }
 
   
