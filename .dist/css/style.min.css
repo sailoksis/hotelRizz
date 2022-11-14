@@ -337,7 +337,7 @@ body._lock {
     transform: rotate(-180deg);
   }
   .menu__item:hover .menu__arrow,
-.menu__item:hover .menu__link {
+  .menu__item:hover .menu__link {
     color: #d4bffd;
   }
 }
@@ -352,7 +352,7 @@ body._lock {
     margin: 10px 0px 0px 18px;
   }
   .menu__item:hover .menu__arrow,
-.menu__item:hover .menu__link {
+  .menu__item:hover .menu__link {
     color: #d4bffd;
   }
 }
